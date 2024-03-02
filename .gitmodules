@@ -1,0 +1,24 @@
+[submodule "custom_nodes/ComfyUI-Manager"]
+	path = custom_nodes/ComfyUI-Manager
+	url = https://github.com/ltdrdata/ComfyUI-Manager
+[submodule "custom_nodes/AIGODLIKE-COMFYUI-TRANSLATION"]
+	path = custom_nodes/AIGODLIKE-COMFYUI-TRANSLATION
+	url = https://github.com/AIGODLIKE/AIGODLIKE-COMFYUI-TRANSLATION
+[submodule "custom_nodes/ComfyUI-Custom-Scripts"]
+	path = custom_nodes/ComfyUI-Custom-Scripts
+	url = https://github.com/pythongosssss/ComfyUI-Custom-Scripts
+[submodule "custom_nodes/ComfyUI_ADV_CLIP_emb"]
+	path = custom_nodes/ComfyUI_ADV_CLIP_emb
+	url = https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb
+[submodule "custom_nodes/ComfyUI_Custom_Nodes_AlekPet"]
+	path = custom_nodes/ComfyUI_Custom_Nodes_AlekPet
+	url = https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet
+[submodule "custom_nodes/ComfyUI_UltimateSDUpscale"]
+	path = custom_nodes/ComfyUI_UltimateSDUpscale
+	url = https://github.com/ssitu/ComfyUI_UltimateSDUpscale
+[submodule "custom_nodes/OneButtonPrompt"]
+	path = custom_nodes/OneButtonPrompt
+	url = https://github.com/AIrjen/OneButtonPrompt
+[submodule "custom_nodes/sdxl_prompt_styler"]
+	path = custom_nodes/sdxl_prompt_styler
+	url = https://github.com/twri/sdxl_prompt_styler
