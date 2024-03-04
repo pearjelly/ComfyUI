@@ -16,3 +16,9 @@
 [submodule "custom_nodes/sdxl_prompt_styler"]
 	path = custom_nodes/sdxl_prompt_styler
 	url = https://github.com/twri/sdxl_prompt_styler
+[submodule "custom_nodes/ComfyUI_ADV_CLIP_emb"]
+	path = custom_nodes/ComfyUI_ADV_CLIP_emb
+	url = https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb
+[submodule "custom_nodes/ComfyUI_UltimateSDUpscale"]
+	path = custom_nodes/ComfyUI_UltimateSDUpscale
+	url = https://github.com/ssitu/ComfyUI_UltimateSDUpscale
