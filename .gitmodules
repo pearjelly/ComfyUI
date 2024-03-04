@@ -7,15 +7,9 @@
 [submodule "custom_nodes/ComfyUI-Custom-Scripts"]
 	path = custom_nodes/ComfyUI-Custom-Scripts
 	url = https://github.com/pythongosssss/ComfyUI-Custom-Scripts
-[submodule "custom_nodes/ComfyUI_ADV_CLIP_emb"]
-	path = custom_nodes/ComfyUI_ADV_CLIP_emb
-	url = https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb
 [submodule "custom_nodes/ComfyUI_Custom_Nodes_AlekPet"]
 	path = custom_nodes/ComfyUI_Custom_Nodes_AlekPet
 	url = https://github.com/AlekPet/ComfyUI_Custom_Nodes_AlekPet
-[submodule "custom_nodes/ComfyUI_UltimateSDUpscale"]
-	path = custom_nodes/ComfyUI_UltimateSDUpscale
-	url = https://github.com/ssitu/ComfyUI_UltimateSDUpscale
 [submodule "custom_nodes/OneButtonPrompt"]
 	path = custom_nodes/OneButtonPrompt
 	url = https://github.com/AIrjen/OneButtonPrompt
