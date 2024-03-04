@@ -1,6 +1,4 @@
 #!/bin/bash
-cd ComfyUI
-
 port=8188
 # shellcheck disable=SC2164
 
