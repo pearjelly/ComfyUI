@@ -1,5 +1,6 @@
 #!/bin/bash
 port=8188
+cmd=$1
 # shellcheck disable=SC2164
 
 if [ ! -d "log" ]; then
