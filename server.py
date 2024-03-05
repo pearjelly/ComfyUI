@@ -638,6 +638,13 @@ class PromptServer():
         if call_on_start is not None:
             call_on_start(address, port)
 
+        if args.run_on_google_colab:
+            try:
+                from google.colab.output import eval_js
+                print(eval_js("google.colab.kernel.proxyPort({})".format(port)))
+            except Exception:
+                pass
+
     def add_on_prompt_handler(self, handler):
         self.on_prompt_handlers.append(handler)
 

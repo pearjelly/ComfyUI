@@ -113,6 +113,7 @@ parser.add_argument("--windows-standalone-build", action="store_true", help="Win
 parser.add_argument("--disable-metadata", action="store_true", help="Disable saving prompt metadata in files.")
 
 parser.add_argument("--multi-user", action="store_true", help="Enables per-user storage.")
+parser.add_argument("--run-on-google-colab", action="store_true", help="ComfyUI running on colab, need proxy this server")
 
 if comfy.options.args_parsing:
     args = parser.parse_args()
