@@ -115,6 +115,9 @@ parser.add_argument("--disable-metadata", action="store_true", help="Disable sav
 parser.add_argument("--multi-user", action="store_true", help="Enables per-user storage.")
 parser.add_argument("--run-on-google-colab", action="store_true", help="ComfyUI running on colab, need proxy this server")
 
+parser.add_argument("--verbose", action="store_true", help="Enables more debug prints.")
+
+
 if comfy.options.args_parsing:
     args = parser.parse_args()
 else:
@@ -125,3 +128,10 @@ if args.windows_standalone_build:
 
 if args.disable_auto_launch:
     args.auto_launch = False
+
+import logging
+logging_level = logging.INFO
+if args.verbose:
+    logging_level = logging.DEBUG
+
+logging.basicConfig(format="%(message)s", level=logging_level)
