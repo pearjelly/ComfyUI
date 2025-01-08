@@ -1,5 +1,6 @@
 from app.logger import on_flush
 import os
+import shutil
 
 
 class TerminalService:
@@ -10,15 +11,27 @@ class TerminalService:
         self.subscriptions = set()
         on_flush(self.send_messages)
 
-    def update_size(self):
-        sz = os.get_terminal_size()
-        changed = False
-        if sz.columns != self.cols:
-            self.cols = sz.columns
-            changed = True 
+    def get_terminal_size(self):
+        try:
+            size = os.get_terminal_size()
+            return (size.columns, size.lines)
+        except OSError:
+            try:
+                size = shutil.get_terminal_size()
+                return (size.columns, size.lines)
+            except OSError:
+                return (80, 24)  # fallback to 80x24
 
-        if sz.lines != self.rows:
-            self.rows = sz.lines
+    def update_size(self):
+        columns, lines = self.get_terminal_size()
+        changed = False
+
+        if columns != self.cols:
+            self.cols = columns
+            changed = True
+
+        if lines != self.rows:
+            self.rows = lines
             changed = True
 
         if changed:
@@ -35,9 +48,9 @@ class TerminalService:
     def send_messages(self, entries):
         if not len(entries) or not len(self.subscriptions):
             return
-        
+
         new_size = self.update_size()
-        
+
         for client_id in self.subscriptions.copy(): # prevent: Set changed size during iteration
             if client_id not in self.server.sockets:
                 # Automatically unsub if the socket has disconnected
